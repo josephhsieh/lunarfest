@@ -25,6 +25,10 @@ Meteor.users.find().fetch();
 * Adds account login UI
 meteor add accounts-ui
 
+* Database UI Control for Meteor (ctrl+m to toggle function)
+meteor add meteortoys:allthings
+
+
 * Open Mongo database from console
 meteor mongo
 

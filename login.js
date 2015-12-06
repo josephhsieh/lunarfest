@@ -21,10 +21,9 @@ if (Meteor.isClient) {
       //   petId: 'a13j3j23s8x823439sdfsf82324kj'
       // }    
 
-
       angular.extend($scope, {
-        addAccount: function(){
-          console.log("ADD ACCOUNT");
+        addAccount: function(username, password){
+          console.log("ADD ACCOUNT: " + username + " --- " + password);
         }
       });
 
