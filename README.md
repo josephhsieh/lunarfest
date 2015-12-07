@@ -14,9 +14,9 @@ meteor add angular
 
 * Removing template packages to avoid the Angular package conflict 
 meteor remove blaze-html-templates 
-meteor remove ecmascript 
+meteor remove ecmascript
 
-* Adds account password
+(option) * Adds account password
 meteor add accounts-password
 
 * List out all users (in Chrome console)
@@ -27,6 +27,10 @@ meteor add accounts-ui
 
 * Database UI Control for Meteor (ctrl+m to toggle function)
 meteor add meteortoys:allthings
+
+* Adds ui-router
+meteor add angularui:angular-ui-router
+
 
 
 * Open Mongo database from console

@@ -1,0 +1,15 @@
+<form>
+	<label>Username</label>
+	<input ng-model="newAccount.username" type="text" />
+	<label>Password</label>
+	<input ng-model="newAccount.password" type="password"/>
+	<button ng-click="accounts.push(newAccount)">Add</button>
+	<button ng-click="removeAll()">Delete All</button>
+</form>
+
+<ul>
+	<li ng-repeat="account in accounts">
+		<a href="/accounts/{{account._id}}">{{account.username}} - {{account.password}}</a>
+		<button ng-click="remove(account)">X</button>
+	</li>
+</ul>
