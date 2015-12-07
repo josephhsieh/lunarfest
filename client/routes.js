@@ -11,7 +11,8 @@ angular.module('lunarfest').config(function($urlRouterProvider, $stateProvider, 
 			url: '/accounts/:accountId',
 			templateUrl: 'client/accounts/views/account-details.html',
 			controller: 'AccountDetailsCtrl'
-		});
+		})
+		;
 
 	$urlRouterProvider.otherwise('/accounts');
 });
