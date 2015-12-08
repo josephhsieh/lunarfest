@@ -21,3 +21,7 @@ accounts-ui
 accounts-facebook
 accounts-twitter
 meteortoys:allthings
+cfs:standard-packages
+cfs:gridfs
+angular:angular-material
+danialfarid:ng-file-upload

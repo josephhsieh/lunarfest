@@ -1,0 +1,23 @@
+<!--Here is the page for images upload/showing !!-->
+<!--<input ng-model = "images" ng-change="addImages($files)"  type="file" name = "upload" class="fileInput">-->
+
+
+<div ng-controller="ImagesCtrl">
+    <div ngf-drop ngf-select
+         ngf-change="addImages($files)"
+         ngf-drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}" class="drop-box"
+         ngf-multiple="false" ngf-allow-dir="false" ngf-accept="'image/*'"
+         ngf-drop-available="dropAvailable">
+        <div>Click here to select image</div>
+        <div>
+            <strong>OR</strong>
+        </div>
+        <div ng-show="dropAvailable">You can also drop image to here</div>
+    </div>
+</div>
+
+<div layout="row" class="images-container-title">
+    <div ng-repeat="image in images">
+        <img ng-src="{{ image.url() }}"/><br/>
+    </div>
+</div>
