@@ -2,6 +2,27 @@ angular.module('lunarfest').config(function($urlRouterProvider, $stateProvider, 
 	$locationProvider.html5Mode(true);
 
 	$stateProvider
+		.state('home', {
+			url: '/home',
+			templateUrl: 'client/home/views/home.html',
+			controller: 'HomeCtrl'
+		})
+		.state('lobby', {
+			url: '/lobby',
+			templateUrl: 'client/lobby/views/lobby.html',
+			controller: 'LobbyCtrl'
+		})
+		.state('profile', {
+			url: '/profile/:profileId',
+			templateUrl: 'client/profile/views/profile.html',
+			controller: 'ProfileCtrl'
+		})
+		.state('profileList', {
+			url: '/profileList',
+			templateUrl: 'client/profile/views/profile-list.html',
+			controller: 'ProfileListCtrl'
+		})
+
 		.state('accounts', {
 			url: '/accounts',
 			templateUrl: 'client/accounts/views/accounts-list.html',
@@ -14,5 +35,5 @@ angular.module('lunarfest').config(function($urlRouterProvider, $stateProvider, 
 		})
 		;
 
-	$urlRouterProvider.otherwise('/accounts');
+	$urlRouterProvider.otherwise('/home');
 });
