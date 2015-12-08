@@ -1,0 +1,16 @@
+<div css="home-container">
+	<h1>Welcome to LunarFest Web App</h1>
+
+	<form ng-submit="login(username, password); username=''; password='';" >
+		<label>Username</label>
+		<input type="text" ng-model="username" />
+		<label>Password</label>
+		<input type="password" ng-model="password" />
+		<input type="submit" value="Login" />
+		<a href="#">Create new account</a>
+	</form>
+
+	<div>
+		<a href="/lobby">Go to Lobby</a>
+	</div>
+</div>
